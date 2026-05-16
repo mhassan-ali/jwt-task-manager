@@ -1,6 +1,6 @@
-# ✅ Full Stack Task Manager App
+🚀 A full-stack Task Manager application with JWT authentication, multi-user support, priority management, and dark mode — built using FastAPI and React.
 
-A modern full-stack task management application built with:
+##A modern full-stack task management application built with:
 
 - ⚛️ React (Vite + Tailwind CSS)
 - 🚀 FastAPI
@@ -68,7 +68,7 @@ frontend/
 ## 📸 Screenshots
 
 ### Login
-![Login](./screenshots/login.png)
+![Login](./screenshots/Login.jpg)
 
 ### Dashboard
 ![Dashboard](./screenshots/dashboard.png)
