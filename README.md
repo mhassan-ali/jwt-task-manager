@@ -1,30 +1,34 @@
-🚀 A full-stack Task Manager application with JWT authentication, multi-user support, priority management, and dark mode — built using FastAPI and React.
+# 🚀 Full-Stack Task Manager
 
-##A modern full-stack task management application built with:
+A secure full-stack Task Manager application built using **React** and **FastAPI**, featuring JWT authentication, multi-user task isolation, priority management, and dark mode support.
+
+---
+
+## 🛠 Tech Stack
 
 - ⚛️ React (Vite + Tailwind CSS)
 - 🚀 FastAPI
 - 🗄️ SQLite + SQLAlchemy
-- 🔐 JWT Authentication
+- 🔐 JWT Authentication (OAuth2 Password Flow)
 - 🌙 Dark Mode Support
 
 ---
 
 ## 🔥 Features
 
-✅ User Registration & Login (JWT Auth)  
-✅ Protected Routes  
+✅ User Registration & Login (JWT Authentication)  
+✅ Protected API Routes  
 ✅ Multi-user Task Isolation  
 ✅ Create / Update / Delete Tasks  
 ✅ Task Priority (Low / Medium / High)  
 ✅ Task Filtering  
 ✅ Created & Updated Timestamps  
-✅ Dark Mode (Persistent)  
+✅ Persistent Dark Mode  
 ✅ Responsive UI  
 
 ---
 
-## 🏗️ Backend Setup
+## 🏗 Backend Setup
 
 ```bash
 cd backend
@@ -32,48 +36,80 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
 
 Backend runs at:
-http://127.0.0.1:8000
 
-##🎨 Frontend Setup
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 🎨 Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 Frontend runs at:
+
+```
 http://localhost:5173
+```
 
-##🔐 Authentication Flow
-Register new user
-Login
-JWT token stored in localStorage
-All task routes protected
+---
 
+## 🔐 Authentication Flow
 
-##🌙 Dark Mode
+1. Register a new user  
+2. Login  
+3. JWT token stored in localStorage  
+4. All task routes are protected  
+5. Each user can only see their own tasks  
+
+---
+
+## 🌙 Dark Mode
+
 Theme preference is saved in localStorage and persists across refresh.
 
+---
 
-##📁 Project Structure
+## 📁 Project Structure
+
+```
 backend/
 frontend/
+screenshots/
+```
 
-##📌 Future Improvements
-✅ Deployment 
-✅ Profile Page
-✅ Search & Sorting
-✅ Task Statistics
+---
 
 ## 📸 Screenshots
 
-### Login
+### 🔐 Login
 ![Login](./screenshots/Login.jpg)
 
-### Dashboard
+### 📋 Dashboard
 ![Dashboard](./screenshots/dashboard.png)
 
-### Dark Mode
+### 🌙 Dark Mode
 ![Dark Mode](./screenshots/dark.png)
 
+---
 
+## 📌 Future Improvements
+
+- 🚀 Deployment (Render + Vercel)
+- 👤 Profile Page
+- 🔍 Search & Sorting
+- 📊 Task Statistics
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
